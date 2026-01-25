@@ -477,9 +477,11 @@ country_event = {
 		}
 		else_if = {
 			limit = { from = { is_same_value = event_target:gem_rose_diamond } }
-			change_leader_portrait = gemD5 #Rose
-			save_global_event_target_as = gem_rose_diamond
-			set_immortal = yes
+			from = {
+				change_leader_portrait = gemD5 #Rose
+				save_global_event_target_as = gem_rose_diamond
+				set_immortal = yes
+			}
 			random_owned_army = {
 				set_leader = event_target:gem_rose_diamond
 			}
